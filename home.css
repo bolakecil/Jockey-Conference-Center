@@ -129,12 +129,12 @@
   .line{
     position: absolute;
     width: 7px;
-    height: 280px;
-    left: 462px;
-    top: 381px;
-    z-index: 1;
-
-    background-color: #000000;
+    height: 248px;
+    /* left: 462px; */
+    top: 34%;
+    left: 33%;
+    z-index: 2;
+    background-color: white;
   }
   
   .logo-black{
@@ -182,4 +182,23 @@
 
   .textn a:hover{
     color: #F92A82;
+  }
+
+  /* .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .title-container{
+    position: absolute;
+    width: 460px;
+    height: 249px;
+    top: 34%; /* Adjust the value to move the box up or down */
+    left: 35%; /* Adjust the value to move the box left or right */
+    z-index: 2;
+
+    background: rgba(217, 217, 217, 0.6);
+    border-radius: 7px;
   }
