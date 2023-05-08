@@ -106,26 +106,6 @@
     border-radius: 7px;
   }
 
-  .home-container{
-    display: flex;
-    align-items: center;
-    padding-left: 279px;
-    padding-top: 381px;
-    background-color:aquamarine;
-  }
-
-  .home-line{
-    position: absolute;
-    /* margin-left: 461.972px; */
-    width: 279.03px;
-    height: 0px;
-    /* left: 279px; */
-    /* top: 381px; */
-
-    border: 7px solid black;
-    transform: rotate(90deg);
-  }
-
   .hero-line{
     position: absolute;
     width: 7px;
