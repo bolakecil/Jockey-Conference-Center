@@ -73,15 +73,47 @@
   z-index: 2;
   background-color: #000000;
   transform-origin: top;
-  animation: slideToLeft 2s forwards;
+  transform: rotate(0deg);
+  animation: slideToLeft 2s forwards, rotateLine 2s forwards;
 }
 
 @keyframes slideToLeft {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 462px;
+  }
+}
+
+@keyframes rotateLine {
   0% {
     transform: rotate(90deg);
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the title appears behind the line */
+  text-align: center;
+  font-size: 2rem; /* Adjust the font size as needed */
+  opacity: 0;
+  animation: fadeIn 2s forwards 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -172,13 +204,5 @@
   color: #F92A82;
 }
 
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure the title appears behind the line */
-  text-align: center;
-  font-size: 2rem; /* Adjust the font size as needed */
-}
+
 
