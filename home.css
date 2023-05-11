@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-  
+/* margin mentok dari left: 100px   */
+
   *{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -7,11 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-
-  .arrow{
-    width:20px;
-    height: 10px;
   }
 
   .carousel-container {
@@ -75,21 +71,10 @@
     }
   }
 
-  .darken{
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    left: 0px;
-    top: 569px;
-
-    background: #747272;
-    mix-blend-mode: multiply;
-  }
-
   .desc-bg{
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 580px;
     left: 0px;
     top: 569px;
 
@@ -101,7 +86,7 @@
 
   .desc-title{
     position: absolute;
-    top: 70px;
+    top: 12%;
     left: 735px;
     font-weight: 400;
     font-size: 30px;
@@ -130,6 +115,27 @@
     font-size: 15px;
   }
 
+  .event, .visitor, .sponsor{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    background: rgba(246, 190, 154, 0.95);
+    border-radius: 10px;
+  }
+
+  .event img{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    margin-left: 6px;
+    margin-top: 7px;
+    /* display: inline-block; */
+  }
+
+
+
+
   .footer {
     position: absolute;
     z-index: 999;
@@ -137,11 +143,9 @@
   }
 
   .header {
-    /* Navbar */
     position: fixed;
     z-index: 999;
     background-color: #ffff;
-    /* mix-blend-mode: normal; */
     box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.05);
     width: 100%;
   }
@@ -183,7 +187,6 @@
   }
 
   .hero-title{
-    /* position: absolute; */
     width: 400px;
     height: 200px;
     left: 5.23%;
@@ -196,10 +199,6 @@
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
-  /* .hero-title-black:hover{
-    color: black;
-  } */
 
   .hero-title span:hover{
     color: black;
@@ -218,11 +217,6 @@
     width: 478px;
     height: 279px;
     margin-left: 166px;
-    /* margin-top: 381px; */
-    /* left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%; */
 
     background: rgba(217, 217, 217, 0.6);
     border-radius: 7px;
@@ -230,6 +224,39 @@
 
   .highlight-motto{
     color: #F92A82;
+  }
+
+  .icon-container{
+    position: absolute;
+    width: 1018px;
+    height: 80px;
+    /* background-color: white; */
+    top: 110px;
+    left: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .image{
+    position: absolute;
+    width: 512px;
+    height: 470px;
+    left: 100px;
+    top: 45px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .image-shadow{
+    position: absolute;
+    width: 512px;
+    height: 475px;
+    left: 128px;
+    top: 65px;
+    background: #1E1E1E;
+    border-radius: 15px;
   }
   
   .logo-black{
@@ -275,6 +302,15 @@
     justify-content: space-between;
   }
 
+  .num{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 90px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
   .plan-button{
     position: absolute;
     width: 185px;
@@ -290,9 +326,8 @@
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    gap:15px;
-    text-align: center;
-    
+    /* gap:3px; */
+    text-align: center;    
     
   }
 
@@ -302,12 +337,78 @@
     border-radius: 7px;
   }
 
-  .stats-bg img{
+  .plan-button p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .plan-button img{
+    width: 20px;
+    height: 10px;
+  }
+
+  .plan-button img:hover{
+    content: url(assets/background-removed/arrowwhite.png);
+    width: 20px;
+    height: 10px;
+  }
+
+  .schedule-bg{
+    position: absolute;
+    top: 1445px;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 569px;
+    z-index: 20;
+  }
+
+  .sponsor img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 9px;
+  }
+
+  .stats-bg{
     position: absolute;
     width: 100%;
     height: 300px;
     left: 0px;
-    top: 569px;
+    top: 1145px;
+    color: black;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat-desc{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 90px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .stats-image{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0;
+  }
+
+  .stats-bg-darken{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0;
+
+    background: #747272;
+    mix-blend-mode: multiply;
   }
   
   .textn{
@@ -325,4 +426,12 @@
 
   .textn a:hover{
     color: #F92A82;
+  }
+
+  .visitor img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 1px;
+    margin-top: 2px;
   }
