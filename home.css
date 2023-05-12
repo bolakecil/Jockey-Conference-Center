@@ -479,12 +479,48 @@
     width: 1198px;
     height: 456px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-around;
     /* margin-left: 30px; */
     margin: 15px 0 0 30px;
     /* gap: 38px; */
   }
+  
+  .astroboy {
+    margin: 10px;
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/astroboy.jpg);
+  }
+
+  .jrt-worship {
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jrtworship.jpg);
+  }
+  
+  .kc-goldenage {
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kcgoldenage.jpg);
+  }
+
+  .container-text {
+    position: absolute;
+    margin: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
 
   .schedule-title{
     font-size: 60px;
