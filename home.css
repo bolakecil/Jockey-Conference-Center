@@ -10,13 +10,9 @@
     padding: 0;
   }
 
-  .astroboy{
-    position: absolute;
-    margin: 10px;
-    width: 380px;
-    height: 456px;
-    border-radius: 15px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/astroboy.jpg);
+  .container {
+    width: auto;  /* Or whatever percentage or fixed value you desire */
+    margin: 0 auto;  /* This will center your container */
   }
 
   .carousel-container {
@@ -268,22 +264,6 @@
     border-radius: 15px;
   }
 
-  .jrt-worship{
-    position: absolute;
-    width: 380px;
-    height: 456px;
-    border-radius: 15px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jrtworship.jpg);
-  }
-
-  .kc-goldenage{
-    position: absolute;
-    width: 380px;
-    height: 456px;
-    border-radius: 15px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kcgoldenage.jpg);
-  }
-  
   .logo-black{
     display: flex;
     justify-content: center;
@@ -392,15 +372,36 @@
     text-align: center;
   }
 
-  .schedule-container{
-    position: absolute;
+  .schedule-container {
     width: 1198px;
     height: 456px;
-    text-align: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    gap: 100px;
+    gap: 20px;
+    margin: auto;
+  }
+  
+  .astroboy {
+    margin: 10px;
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/astroboy.jpg);
+  }
+
+  .jrt-worship {
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jrtworship.jpg);
+  }
+  
+  .kc-goldenage {
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kcgoldenage.jpg);
   }
 
   .schedule-title{
