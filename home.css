@@ -10,6 +10,15 @@
     padding: 0;
   }
 
+  .astroboy{
+    position: absolute;
+    margin: 10px;
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/astroboy.jpg);
+  }
+
   .carousel-container {
     position: relative;
     width: 100%;
@@ -258,6 +267,22 @@
     background: #1E1E1E;
     border-radius: 15px;
   }
+
+  .jrt-worship{
+    position: absolute;
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jrtworship.jpg);
+  }
+
+  .kc-goldenage{
+    position: absolute;
+    width: 380px;
+    height: 456px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kcgoldenage.jpg);
+  }
   
   .logo-black{
     display: flex;
@@ -359,8 +384,36 @@
     top: 1445px;
     background-color: #f0f0f0;
     width: 100%;
-    height: 569px;
+    height: 700px;
     z-index: 20;
+  }
+
+  .schedule-bg p{
+    text-align: center;
+  }
+
+  .schedule-container{
+    position: absolute;
+    width: 1198px;
+    height: 456px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+  }
+
+  .schedule-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 75px;
+  }
+
+  .schedule-subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    color: #F92A82;
+    margin-top: 10px;
   }
 
   .sponsor img{
