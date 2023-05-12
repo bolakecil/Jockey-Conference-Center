@@ -10,13 +10,46 @@
     padding: 0;
   }
 
-  .astroboy{
-    position: absolute;
+  .astroboy {
     margin: 10px;
-    width: 380px;
-    height: 456px;
+    width: 270px;
+    height: 350px;
     border-radius: 15px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/astroboy.jpg);
+  }
+
+  .astroboy .limited-seat-container{
+    display: none;
+  }
+
+  .astroboy:hover .schedule-desc{
+    display: none;
+  }
+
+  .astroboy:hover .limited-seat-container{
+    display: block;
+  }
+
+  .astroboy:hover{
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .book-now{
+    position: relative;
+    width: 115px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 80px;
+    background-color: #F92A82;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-now p{
+    color: white;
+    opacity: 1;
   }
 
   .carousel-container {
@@ -142,13 +175,12 @@
     /* display: inline-block; */
   }
 
-
-
-
-  .footer {
+  .footer-bg{
     position: absolute;
-    z-index: 999;
-    background-color: #1E1E1E;
+    width: 100%;
+    height: 200px;
+    top: 2145px;
+    background-color:#1E1E1E;
   }
 
   .header {
@@ -269,20 +301,74 @@
   }
 
   .jrt-worship{
-    position: absolute;
-    width: 380px;
-    height: 456px;
+    width: 270px;
+    height: 350px;
     border-radius: 15px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/jrtworship.jpg);
   }
 
+  .jrt-worship .limited-seat-container{
+    display: none;
+  }
+
+  .jrt-worship:hover .schedule-desc{
+    display: none;
+  }
+
+  .jrt-worship:hover .limited-seat-container{
+    display: block;
+  }
+
+  .jrt-worship:hover{
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
   .kc-goldenage{
-    position: absolute;
-    width: 380px;
-    height: 456px;
+    width: 270px;
+    height: 350px;
     border-radius: 15px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/kcgoldenage.jpg);
   }
+
+  .kc-goldenage .limited-seat-container{
+    display: none;
+  }
+
+  .kc-goldenage:hover .schedule-desc{
+    display: none;
+  }
+
+  .kc-goldenage:hover .limited-seat-container{
+    display: block;
+  }
+
+  .kc-goldenage:hover{
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .limited-seat{
+    /* margin-top: 250px; */
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+  }
+
+  .limited-seat span{
+    color:#F92A82;
+    font-weight: 700;
+  }
+
+  .limited-seat-container{
+    width: 270px;
+    height: 150px;
+    margin-top: 200px;
+    padding-top: 30px;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+
   
   .logo-black{
     display: flex;
@@ -329,7 +415,7 @@
 
   .num{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 90px;
     color: white;
     font-weight: 400;
@@ -350,8 +436,6 @@
     border-radius: 7px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* gap:3px; */
     text-align: center;    
     
   }
@@ -362,6 +446,10 @@
     border-radius: 7px;
   }
 
+  .plan-button:hover img{
+    content: url(assets/background-removed/arrowwhite.png);
+  }
+
   .plan-button p{
     font-size: 15px;
     font-weight: 500;
@@ -369,12 +457,6 @@
   }
   
   .plan-button img{
-    width: 20px;
-    height: 10px;
-  }
-
-  .plan-button img:hover{
-    content: url(assets/background-removed/arrowwhite.png);
     width: 20px;
     height: 10px;
   }
@@ -393,14 +475,15 @@
   }
 
   .schedule-container{
-    position: absolute;
+    /* position: absolute; */
     width: 1198px;
     height: 456px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 100px;
+    /* margin-left: 30px; */
+    margin: 15px 0 0 30px;
+    /* gap: 38px; */
   }
 
   .schedule-title{
@@ -410,10 +493,18 @@
   }
 
   .schedule-subtitle{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
     color: #F92A82;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+
+  .schedule-desc{
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 290px;
   }
 
   .sponsor img{
