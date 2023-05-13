@@ -113,6 +113,15 @@
     }
   }
 
+  .copyright{
+    position: relative;
+    top: 120px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFD8BE;
+    text-align: center;
+  }
+
   .desc-bg{
     position: absolute;
     width: 100%;
@@ -175,12 +184,65 @@
     /* display: inline-block; */
   }
 
+  .explore{
+    width: 143px;
+    height: 147px;
+    /* position: relative; */
+  }
+
+  .facebook{
+    width: 80px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+
+  .follow{
+    width: 146px;
+    height: 120px;
+  }
+
+  .follow img{
+    width: 21px;
+    height: 21px;
+  }
+
   .footer-bg{
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 300px;
     top: 2145px;
     background-color:#1E1E1E;
+  }
+
+  .footer-desc{
+    margin: 10px 0 10px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F7F7F7;
+  }
+
+  .footer-desc:hover{
+    color:#F92A82;
+  }
+
+  .footer-link{
+    color:#F7F7F7;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .footer-link:hover{
+    color: #F92A82;
+  }
+
+  .footer-title{
+    color: #F6BE9A;
+    font-weight: 800;
+    font-size: 17px;
   }
 
   .header {
@@ -300,6 +362,20 @@
     border-radius: 15px;
   }
 
+  .information{
+    width: 170px;
+    height: 120px;
+  }
+
+  .instagram{
+    width: 73px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 1px; */
+  }
+
   .jrt-worship{
     width: 270px;
     height: 350px;
@@ -347,7 +423,6 @@
   }
 
   .limited-seat{
-    /* margin-top: 250px; */
     font-weight: 400;
     font-size: 25px;
     color: white;
@@ -356,6 +431,17 @@
   .limited-seat span{
     color:#F92A82;
     font-weight: 700;
+  }
+
+  .level{
+    position: relative;
+    width: 600px;
+    height: 147px;
+    left: 565px;
+    top: 75px;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-around;
   }
 
   .limited-seat-container{
@@ -381,16 +467,30 @@
     height: 54px;
   }
 
-  .logo-desc{
-    position: absolute;
+  .logo-white{
+    top: 79px;
+    left: 100px;
     width: 205px;
-    height: 50px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: justify;
+    height: 126px;
+    position: absolute;
+  }
 
+  .logo-white img{
+    width: 160px;
+    height: 54px;
+  }
+
+  .logo-white p{
+    margin-top: 10px;
+    width: 205px;
     color: #F7F7F7;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .logo-white span{
+    color: #F6BE9A;
   }
 
   .modified-jockey{
@@ -578,4 +678,13 @@
     height: 70px;
     margin-left: 1px;
     margin-top: 2px;
+  }
+
+  .youtube{
+    width: 80px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
   }
