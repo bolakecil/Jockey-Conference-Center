@@ -91,6 +91,48 @@
     width: 100%;
   }
 
+  .hero-bg{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color:#F6BE9A;
+  }
+
+  .hero-bg-img{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .hero-line{
+    position: absolute;
+    width: 410px;
+    height: 0px;
+    right: 155px;
+    top: 370px;
+    border: 3px solid #F7F7F7;
+    align-items:end;
+  }
+
+  .hero-line-diamond{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 399px;
+    top: -13px;
+    background-color: #F7F7F7;
+    transform: rotate(45deg);
+  }
+
+  .hero-title{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 100px;
+  }
+
   .highlight-nav {
     color: #F92A82;
   }
