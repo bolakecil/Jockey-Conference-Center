@@ -1,5 +1,5 @@
 let countsa=setInterval(updateda);
-let uptoa=353;
+let uptoa=153;
 function updateda(){
     var counta= document.getElementById("num-event");
     counta.innerHTML=++uptoa;
@@ -9,7 +9,7 @@ function updateda(){
 }
 
 let countsb=setInterval(updatedb);
-let uptob=12004;
+let uptob=11504;
 function updatedb(){
     var countb= document.getElementById("num-visitor");
     countb.innerHTML=++uptob;
@@ -19,7 +19,7 @@ function updatedb(){
 }
 
 let countsc=setInterval(updatedc);
-let uptoc=6398;
+let uptoc=6098;
 function updatedc(){
     var countc= document.getElementById("num-sponsor");
     countc.innerHTML=++uptoc;
