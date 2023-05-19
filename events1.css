@@ -328,7 +328,7 @@
     padding-left: 3px;
   }
 
-  .send-button{
+  .send-button button{
     position: relative;
     top: -45px;
     left: 750px;
@@ -339,13 +339,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border:none;
 
     color:#F92A82;
     font-weight: 500;
     font-size: 9px;
   }
 
-  .send-button:hover{
+  .send-button button:hover{
     background-color: #F92A82;
     color:#F7F7F7;
   }
