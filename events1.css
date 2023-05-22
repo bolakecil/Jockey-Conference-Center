@@ -306,6 +306,10 @@
     align-items: center;
   }
 
+  .newsletter input:focus{
+    outline:none;
+  }
+
   .newsletter-text{
     position: relative;
     padding-top: 60px;
