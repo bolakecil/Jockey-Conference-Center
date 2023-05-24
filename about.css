@@ -9,6 +9,72 @@
     padding: 0;
   }
 
+  .award{
+    width: 100%;
+    height: 600px;
+    /* background-color: #FFD8BE; */
+  }
+
+  .award-bg{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+  }
+
+  .award-container{
+    position: absolute;
+  }
+
+  .award-darken{
+    /* position: absolute; */
+    width: 100%;
+    height: 600px;
+    background: #979DAD;
+    mix-blend-mode: multiply;
+  }
+
+  .award-img{
+    position: absolute;
+    top: -492px;
+    left: 730px;
+    width: 200px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .award-img img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .award-text{
+    position: absolute;
+    top: -489px;
+    left: 800px;
+    width: 300px;
+    height: 403px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+  }
+
+  .award-title{
+    position: absolute;
+    width: 300px;
+    top: -445px;
+    left: 100px;
+    font-weight: 300;
+    font-size: 80px;
+    text-align: justify;
+    color: #F6BE9A;
+  }
+
   .copyright{
     position: relative;
     top: 120px;
@@ -16,6 +82,37 @@
     font-size: 11px;
     color: #FFD8BE;
     text-align: center;
+  }
+
+  .description{
+    background-color: #F0F0F0;
+    width: 100%;
+    height:720px;
+  }
+
+  .description-container{
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description-container img{
+    width: 450px;
+    height: 600px;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius: 25px;
+  }
+
+  .description-container p{
+    width: 450px;
+    margin-right: 100px;
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: justify;
+    color: #1E1E1E;
   }
 
   .explore{
@@ -198,6 +295,29 @@
     color: #F6BE9A;
   }
 
+  .member-badge{
+    width: 80%;
+    height: 200px;
+    padding-top: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .member-container{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .member-container p{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 35px;
+    color:black;
+  }
+
   .nav-container{
     margin: 0 100px 0 100px;
     height: 87px;
@@ -229,4 +349,26 @@
     align-items: center;
     justify-content: space-between;
     gap: 7px;
+  }
+
+  #badge1{
+    width: 200px;
+    height: 100px;
+  }
+
+  #badge2{
+    padding-left: 20px;
+    width: 200px;
+    height: 120px;
+  }
+
+  #badge3{
+    width: 130px;
+    height: 200px;
+    padding-left: 20px;
+  }
+
+  #badge4{
+    width: 300px;
+    height: 200px;
   }
