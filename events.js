@@ -1,12 +1,14 @@
 document.getElementById("button").onclick = function () {
     let email = document.getElementById("email").value;
-    if (email == "") {
+    if (email == ""){
         alert("Email should not be empty!");
         return false;
-    } else if (email.split("@").length > 2 || email.split("@").length == 1) {
+    }
+    else if (email.split("@").length > 2 || email.split("@").length == 1){
         alert("Email should contain '@'!");
         return false;
-    } else if (!email.split("@")[1].includes(".com")) {
+    }
+    else if (!email.split("@")[1].includes(".com")){
         alert("Email should contain '.com' after '@'!");
         return false;
     }
