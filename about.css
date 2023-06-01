@@ -203,11 +203,11 @@
 
   .hero-line{
     position: absolute;
-    width: 410px;
+    width: 25.625rem;
     height: 0px;
-    right: 155px;
-    top: 370px;
-    border: 3px solid #FFFFFF;
+    margin-left: 55%;
+    margin-top: -7%;
+    border: 0.1875rem solid #FFFFFF;
     align-items:end;
   }
 
@@ -265,8 +265,7 @@
   }
 
   .logo-black img{
-    width: 160px;
-    height: 54px;
+    height: 3.375rem;
   }
 
   .logo-white{
@@ -371,4 +370,9 @@
   #badge4{
     width: 300px;
     height: 200px;
+  }
+
+  @media only screen and (max-width: 768px){
+    /* CSS rules for screen width less than or equal to 768px */
+    /* Add similar rules as mobile, adjust as needed */
   }

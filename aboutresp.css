@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.award{
+    width: 100%;
+    height: 37.5rem;
+}
+
+.award-bg{
+    position: absolute;
+    width: 100%;
+    height: 37.5rem;
+}
+
+.award-container{
+    position: absolute;
+    width: 100%;
+    height: 37.5rem;
+}
+
+.award-darken{
+    width: 100%;
+    height: 37.5rem;
+    background: #979DAD;
+    mix-blend-mode: multiply;
+}
+
+.award-img{
+    position: absolute;
+    margin-top: -38.5%;
+    margin-left: 57%;
+    /* top: -30.75rem; */
+    /* left: 45.625rem; */
+    /* width: 12.5rem; */
+    height: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.award-img img{
+    height: 1.875rem;
+}
+
+.award-text{
+    position: absolute;
+    margin-top: -38.3%;
+    margin-left: 63%;
+    height: 25.1875rem;
+    padding-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4375rem;
+}
+
+.award-title{
+    position: absolute;
+    width: 18.75rem;
+    /* top: -27.8125rem; */
+    /* left: 6.25rem; */
+    margin-top: -35%;
+    margin-left: 9%;
+    font-weight: 300;
+    font-size: 5rem;
+    text-align: justify;
+    color: #F6BE9A;
+}
+
+.copyright{
+    position: relative;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 0.6875rem;
+    color: #FFD8BE;
+    text-align: center;
+}
+
+.description{
+    background-color: #F0F0F0;
+    width: 100%;
+    height:45rem;
+}
+
+.description-container{
+    height: 40.625rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-container img{
+    /* width: 28.125rem; */
+    width: 36%;
+    height: 93%;
+    /* height: 37.5rem; */
+    margin-top: 6%;
+    margin-left: 9%;
+    border-radius: 1.5625rem;
+}
+
+.description-container p{
+    /* width: 28.125rem; */
+    /* margin-left: 13%; */
+    width: 37%;
+    margin-right: 9%;
+    margin-top: 6.3%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #1E1E1E;
+}
+
+.explore{
+    width: 8.9375rem;
+    height: 9.1875rem;
+}
+
+.facebook{
+    width: 5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4375rem;
+}
+
+.follow{
+    width: 9.125rem;
+    height: 7.5rem;
+}
+
+.follow img{
+    width: 1.3125rem;
+    height: 1.3125rem;
+}
+
+.footer-bg{
+    position: absolute;
+    width: 100%;
+    height: 18.75rem;
+    top: 134.0625rem;
+    background-color:#1E1E1E;
+}
+
+.footer-desc{
+    margin: 0.625rem 0 0.625rem 0;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #F7F7F7;
+}
+
+.footer-desc:hover{
+  color:#F92A82;
+}
+
+.footer-desc span{
+  color:#F92A82;
+}
+
+.footer-link{
+    color:#F7F7F7;
+    font-weight: 300;
+    font-size: 0.8125rem;
+}
+
+.footer-link:hover{
+    color: #F92A82;
+}
+
+.footer-title{
+    color: #F6BE9A;
+    font-weight: 800;
+    font-size: 1.0625rem;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    background-color: #ffff;
+    box-shadow: 0px 0.125rem 0.25rem 0.1875rem rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.hero-bg{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-bg-img{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-line{
+    position: absolute;
+    width: 25.625rem;
+    height: 0px;
+    margin-left: 55%;
+    /* right: 9.6875rem; */
+    margin-top: -7%;
+    /* top: 23.125rem; */
+    border: 0.1875rem solid #FFFFFF;
+    align-items:end;
+}
+
+.hero-line-diamond{
+    position: absolute;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    left: 24.9375rem;
+    top: -0.8125rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+}
+
+.hero-title{
+    position: absolute;
+    margin-left: 9%;
+    margin-top: -12.5%;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 6.25rem;
+}
+
+.highlight-nav {
+    color: #F92A82;
+}
+
+.information{
+    width: 10.625rem;
+    height: 7.5rem;
+}
+
+.instagram{
+    width: 4.5625rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level{
+    position: relative;
+    padding-top: 6.3%;
+    /* top: 4.6875rem; */
+    margin-right: 9%;
+    margin-left: 40%;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo-black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-black img{
+    height: 3.375rem;
+}
+
+.logo-white{
+    margin-top: 6.3%;
+    /* top: 4.9375rem; */
+    margin-left: 9%;
+    /* margin-right: 28%; */
+    /* width: 12.8125rem; */
+    height: 7.875rem;
+    position: absolute;
+}
+
+.logo-white img{
+    width: 10rem;
+    height: 3.375rem;
+}
+
+.logo-white p{
+    margin-top: 0.625rem;
+    width: 12.8125rem;
+    color: #F7F7F7;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    text-align: justify;
+}
+
+.logo-white span{
+    color: #F6BE9A;
+}
+
+.member-badge{
+    width: 80%;
+    height: 12.5rem;
+    padding-top: 6%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-container{
+    text-align: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.member-container p{
+    margin-top: 3%;
+    font-weight: 600;
+    font-size: 2.0625rem;
+    color:black;
+}
+
+.nav-container{
+    margin: 0 9% 0 9%;
+    height: 5.4375rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 768px;
+}
+
+.textn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.563rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.textn a:hover{
+    color: #F92A82;
+}
+
+.textn a{
+    color: black;
+}
+
+.youtube{
+    width: 5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4375rem;
+}
+
+#badge1{
+    width: 12.5rem;
+    height: 6.25rem;
+}
+
+#badge2{
+    padding-left: 1.25rem;
+    width: 12.5rem;
+    height: 7.5rem;
+}
+
+#badge3{
+    width: 8.125rem;
+    height: 12.5rem;
+    padding-left: 1.25rem;
+}
+
+#badge4{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+@media only screen and (max-width: 768px){
+    /* CSS rules for screen width less than or equal to 768px */
+    /* Add similar rules as mobile, adjust as needed */
+  }

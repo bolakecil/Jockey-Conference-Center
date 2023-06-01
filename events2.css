@@ -236,8 +236,7 @@
   }
 
   .logo-black img{
-    width: 160px;
-    height: 54px;
+    height: 3.375rem;
   }
 
   .logo-white{
@@ -415,4 +414,9 @@
   #week2{
     color:#FFFFFF;
     background-color: #F92A82;
+  }
+
+  @media only screen and (max-width: 768px){
+    /* CSS rules for screen width less than or equal to 768px */
+    /* Add similar rules as mobile, adjust as needed */
   }
