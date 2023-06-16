@@ -62,6 +62,7 @@
     color: #FFFFFF;
     text-align: center;
     line-height: 2.8125rem;
+    transition: 0.7s ease;
   }
 
   .copyright{
@@ -137,6 +138,24 @@
     font-size: 1.0625rem;
   }
 
+  .hamburger{
+    position: absolute;
+    top: 2.1rem;
+    right: 9%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.3rem;
+  }
+
+  .hamburger .bar{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #1E1E1E;
+  }
+
   .header {
     position: fixed;
     z-index: 10;
@@ -189,10 +208,6 @@
     font-size: 6.25rem;
   }
 
-  .highlight-nav {
-    color: #F92A82;
-  }
-
   .information{
     width: 10.625rem;
     height: 7.5rem;
@@ -233,8 +248,6 @@
     margin-top: 6.3%;
     /* top: 4.9375rem; */
     margin-left: 9%;
-    /* margin-right: 28%; */
-    /* width: 12.8125rem; */
     height: 7.875rem;
     position: absolute;
   }
@@ -262,7 +275,7 @@
     height: 5.4375rem;
     display: flex;
     justify-content: space-between;
-    min-width: 768px;
+    /* min-width: 768px; */
   }
 
   .price{
@@ -293,7 +306,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 920px;
+    /* min-width: 920px; */
   }
 
   .price-num{
@@ -303,6 +316,7 @@
     text-align: center;
     margin: auto;
     margin-top: 2.1875rem;
+    transition: 0.7s ease;
   }
 
   .price-tag{
@@ -310,6 +324,7 @@
     height: 5.625rem;
     background-color: #F6BE9A;
     text-align: center;
+    transition: 0.7s ease;
   }
 
   .price-tag p{
@@ -328,13 +343,19 @@
     font-weight: 600;
   }
 
-  .textn a{
+  .text{
     color: black;
+    transition: 0.15s ease;
   }
 
-  .textn a:hover{
+  .text:hover{
     color: #F92A82;
   }
+
+  .text span{
+    color:#F92A82;
+  }
+
 
   .youtube{
     width: 5rem;
@@ -346,6 +367,140 @@
   }
 
   @media only screen and (max-width: 768px){
-    /* CSS rules for screen width less than or equal to 768px */
-    /* Add similar rules as mobile, adjust as needed */
+
+    .hamburger{
+      display: flex;
+    }
+
+    .textn{
+      display: none;
+      width: 30%;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      margin-left: 70%;
+      margin-top: -3%;
+      padding-bottom: 3%;
+    }
+
+    .text{
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: #FFFFFF;
+    }
+
+    .nav-container{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 7% 0 7%;
+    }
+
+    .nav-container img{
+      margin-top: 10%;
+    }
+
+    .benefit-check{
+      height: 7.9rem;
+    }
+
+    .benefit-container{
+      position: relative;
+      /* width: 10.125rem; */
+      width: 60%;
+      height: 8.5rem;
+      margin-top: 3.125rem;
+      margin: auto;
+      margin-top: 1.7rem;
+    }
+
+    .benefit-text{
+      height: 8rem;
+      font-size: 0.8rem;
+    }
+
+    .book-now{
+      margin: auto;
+      margin-top: 6%;
+      margin-bottom: 6.5%;
+      border-radius: 0.8rem;
+      font-size: 0.8375rem;
+    }
+
+    .copyright{
+      font-size: 0.65rem;
+      margin-top: 10%;
+    }
+
+    .footer-bg{
+      top: 101.8rem;
+    }
+
+    .footer-desc{
+      font-size: 0.8rem;
+    }
+
+    .footer-link{
+      font-size: 0.8rem;
+    }
+
+    .footer-title{
+      font-size: 0.99rem;
+    }
+
+    .hero-line{
+      margin-top: -11%;
+      width: 12.625rem;
+    }
+  
+    .hero-line-diamond{
+      width: 1rem;
+      height: 1rem;
+      left: 12.5rem;
+      top: -0.5125rem;
+    }
+  
+    .hero-title{
+      margin-top: -18%;
+      font-size: 4.75rem;
+    }  
+
+    .logo-white img{
+      width: 9rem;
+      height: 3rem;
+    }
+
+    .logo-white p{
+      font-size: 0.78rem;
+      width: 10rem;
+    }
+
+    .price-container{
+      flex-direction: column;
+      gap: 5%;
+      margin: auto;
+      margin-top: 5%;
+      min-width: none;
+    }
+
+    .price-num{
+      font-size: 1.475rem;
+      margin: auto;
+      margin-top: 1.5rem;
+    }
+
+    .price-tag{
+      width: 18rem;
+      height: 4.625rem;
+    }
+
+    .price-tag p {
+      font-size: 1.3375rem;
+      line-height: 4.9375rem;
+    }
+
+    .textn{
+      gap:2rem;
+      font-size: 0.9rem;
+    }
   }

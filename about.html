@@ -18,12 +18,17 @@
               /></a>
             </li>
           </div>
-          <div class="textn">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="events1.html">Events</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li class="highlight-nav">About</li>
-            <li><a href="contact.html">Contact</a></li>
+          <a href="#" class="hamburger" id="hamburger" onclick="showText()" ondblclick="hideText()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="textn" id="changeDisplay">
+            <a href="home.html" class="text">Home</a>
+            <a href="events1.html" class="text">Events</a>
+            <a href="pricing.html" class="text">Pricing</a>
+            <a href="#" class="text"><span>About</span></a>
+            <a href="contact.html" class="text">Contact</a>
           </div>
         </div>
     </div>
@@ -122,4 +127,5 @@
         </div>
       </div>
 </body>
+<script src="about.js" defer></script>
 </html>

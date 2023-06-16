@@ -23,7 +23,7 @@
 .award-container{
     position: absolute;
     width: 100%;
-    height: 37.5rem;
+    /* height: 37.5rem; */
 }
 
 .award-darken{
@@ -186,6 +186,24 @@
     font-size: 1.0625rem;
 }
 
+.hamburger{
+    position: absolute;
+    top: 2.1rem;
+    right: 9%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.3rem;
+  }
+
+  .hamburger .bar{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #1E1E1E;
+  }
+
 .header {
     position: fixed;
     z-index: 10;
@@ -237,10 +255,6 @@
     font-size: 6.25rem;
 }
 
-.highlight-nav {
-    color: #F92A82;
-}
-
 .information{
     width: 10.625rem;
     height: 7.5rem;
@@ -281,8 +295,6 @@
     margin-top: 6.3%;
     /* top: 4.9375rem; */
     margin-left: 9%;
-    /* margin-right: 28%; */
-    /* width: 12.8125rem; */
     height: 7.875rem;
     position: absolute;
 }
@@ -333,7 +345,7 @@
     height: 5.4375rem;
     display: flex;
     justify-content: space-between;
-    min-width: 768px;
+    /* min-width: 768px; */
 }
 
 .textn{
@@ -343,15 +355,20 @@
     gap: 3.563rem;
     font-size: 1.1rem;
     font-weight: 600;
-}
+  }
 
-.textn a:hover{
-    color: #F92A82;
-}
-
-.textn a{
+  .text{
     color: black;
-}
+    transition: 0.15s ease;
+  }
+
+  .text:hover{
+    color: #F92A82;
+  }
+
+  .text span{
+    color:#F92A82;
+  }
 
 .youtube{
     width: 5rem;
@@ -385,6 +402,135 @@
 }
 
 @media only screen and (max-width: 768px){
-    /* CSS rules for screen width less than or equal to 768px */
-    /* Add similar rules as mobile, adjust as needed */
-  }
+
+    .hamburger{
+      display: flex;
+    }
+
+    .textn{
+      display: none;
+      width: 30%;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      margin-left: 70%;
+      margin-top: -3%;
+      padding-bottom: 3%;
+    }
+
+    .text{
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: #FFFFFF;
+    }
+
+    .nav-container{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 7% 0 7%;
+    }
+
+    .nav-container img{
+      margin-top: 10%;
+    }
+
+    .award-img{
+        margin-top: -65.8%;
+        margin-left: 57%;
+        gap: 3.7rem;
+    }
+
+    .award-img img{
+        width: 30%;
+        height: 25%;
+    }
+
+    .award-title{
+        font-size: 4.5rem;
+        margin-top: -58%;
+    }
+
+    .award-text{
+        margin-top: -65.5%;
+        gap: 3.3rem;
+        /* height: 25.1875rem; */
+        font-size: 1.1375rem;
+    }
+    
+    .copyright{
+        font-size: 0.65rem;
+        margin-top: 10%;
+    }
+
+    .description-container p{
+        font-size: 1.2rem;
+    }
+
+    .footer-bg{
+        top: 127.1625rem;
+    }
+
+    .footer-desc{
+      font-size: 0.8rem;
+    }
+
+    .footer-link{
+      font-size: 0.8rem;
+    }
+
+    .footer-title{
+      font-size: 0.99rem;
+    }
+
+    .hero-line{
+      margin-top: -11%;
+      width: 12.625rem;
+    }
+    
+    .hero-line-diamond{
+      width: 1rem;
+      height: 1rem;
+      left: 12.5rem;
+      top: -0.5125rem;
+    }
+    
+    .hero-title{
+      margin-top: -18%;
+      font-size: 4.75rem;
+    }    
+
+    .logo-white img{
+      width: 9rem;
+      height: 3rem;
+    }
+
+    .logo-white p{
+      font-size: 0.78rem;
+      width: 10rem;
+    }
+
+    .member-container p{
+        margin-top: 6%;
+    }
+
+    .textn{
+        gap:2rem;
+        font-size: 0.9rem;
+    }
+
+    #badge1, #badge2{
+        width: 50%;
+        height: 50%;
+    }
+
+    #badge3{
+        width: 80%;
+        height: 85%;
+    }
+
+    #badge4{
+        width: 95%;
+        height: 95%;
+    }
+}

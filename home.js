@@ -27,3 +27,22 @@ function updatedc(){
         clearInterval(countsc);
     }
 }
+
+// function showText() {
+//     var element = document.getElementById("changeDisplay");
+//     if (element.style.display === "flex") {
+//       element.style.display = "none";
+//     } else {
+//       element.style.display = "flex";
+//     }
+//   }
+
+function showText(){
+    document.getElementById("changeDisplay").style.display="flex";
+}
+
+function hideText(){
+    document.getElementById("changeDisplay").style.display="none";
+}
+
+

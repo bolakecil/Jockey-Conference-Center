@@ -151,6 +151,24 @@ html{
   font-size: 1.0625rem;
 }
 
+.hamburger{
+  position: absolute;
+  top: 2.1rem;
+  right: 9%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.3rem;
+}
+
+.hamburger .bar{
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #1E1E1E;
+}
+
 .header {
   position: fixed;
   z-index: 10;
@@ -200,10 +218,6 @@ html{
   font-size: 6.25rem;
 }
 
-.highlight-nav {
-  color: #F92A82;
-}
-
 .information{
   width: 10.625rem;
   height: 7.5rem;
@@ -244,8 +258,6 @@ html{
   margin-top: 6.3%;
   /* top: 4.9375rem; */
   margin-left: 9%;
-  /* margin-right: 28%; */
-  /* width: 12.8125rem; */
   height: 7.875rem;
   position: absolute;
 }
@@ -273,7 +285,7 @@ html{
   height: 5.4375rem;
   display: flex;
   justify-content: space-between;
-  min-width: 768px;
+  /* min-width: 768px; */
 }
 
 .newsletter-bg{
@@ -368,19 +380,22 @@ html{
   font-weight: 600;
 }
 
-.textn a{
+.text{
   color: black;
+  transition: 0.15s ease;
 }
 
-.textn a:hover{
+.text:hover{
   color: #F92A82;
 }
 
+.text span{
+  color:#F92A82;
+}
+
+
 .week{
-  /* width: 12.5rem; */
   width: 24%;
-  /* height: 50%; */
-  /* height: 7.5rem; */
   background-color: white;
 
   text-align: center;
@@ -389,6 +404,7 @@ html{
   color:black;
   font-weight: 600;
   font-size: 1.375rem;
+  transition: 0.3s ease;
 }
 
 .week:hover{
@@ -422,6 +438,157 @@ html{
 }
 
 @media only screen and (max-width: 768px){
-    /* CSS rules for screen width less than or equal to 768px */
-    /* Add similar rules as mobile, adjust as needed */
+
+  .hamburger{
+    display: flex;
+  }
+
+  .textn{
+    display: none;
+    width: 30%;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-left: 70%;
+    margin-top: -3%;
+    padding-bottom: 3%;
+  }
+
+  .text{
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+
+  .nav-container{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 7% 0 7%;
+  }
+
+  .nav-container img{
+    margin-top: 10%;
+  }
+  
+  .copyright{
+    font-size: 0.65rem;
+    margin-top: 10%;
+  }
+
+  .event-box{
+    margin-left: 7%;
+    gap: 2rem;
+    margin-right: 7%;
+    /* background-color: aqua; */
+  }
+
+  .event-box img{
+    /* width: 10.75rem; */
+    width: 33%;
+  }
+
+  .event-date{
+    font-size: 1.1rem;
+  }
+
+  .event-time{
+    font-size: 0.675rem;
+  }
+
+  .event-name{
+    font-size: 1.7625rem;
+  }
+
+  .event-desc{
+    font-size: 0.8575rem;
+    width: 18rem;
+  }
+
+  .footer-bg{
+    top: 122.0625rem;
+  }
+
+  .footer-desc{
+    font-size: 0.8rem;
+  }
+
+  .footer-link{
+    font-size: 0.8rem;
+  }
+
+  .footer-title{
+    font-size: 0.99rem;
+  }
+
+  .hero-line{
+    margin-top: -11%;
+    width: 12.625rem;
+  }
+
+  .hero-line-diamond{
+    width: 1rem;
+    height: 1rem;
+    left: 12.5rem;
+    top: -0.5125rem;
+  }
+
+  .hero-title{
+    margin-top: -18%;
+    font-size: 4.75rem;
+  }
+
+  .logo-white img{
+    width: 9rem;
+    height: 3rem;
+  }
+
+  .logo-white p{
+    font-size: 0.78rem;
+    width: 10rem;
+  }
+
+  .newsletter-bg{
+    margin-left: 14.5%;
+    margin-right: 14.5%;
+  }
+
+  .newsletter input{
+    width: 23%;
+    padding-left: 0.625rem;
+    top: -2rem;
+    margin-left: 73%;
+    font-size: 0.525rem;
+  }
+
+  .newsletter-subtitle{
+    font-size: 1rem;
+    padding-top: 0.3125rem;
+  }
+
+  .newsletter-text{
+    padding-left: 4.3%;
+  }
+
+  .newsletter-title{
+    margin-top: 3.8%;
+    font-size: 1.775rem;
+  }
+
+  .send-button button{
+    top: -1.4rem;
+    margin-left: 88.93%;
+    width: 7.1%;
+    font-size: 0.4625rem;
+  }
+  
+  .textn{
+    gap:2rem;
+    font-size: 0.9rem;
+  }
+
+  .week-container{
+    margin-left: 14.5%;
+    margin-right: 14.5%;
+  }
 }

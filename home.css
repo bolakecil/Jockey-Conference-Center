@@ -247,6 +247,24 @@
     font-size: 1.0625rem;
   }
 
+  .hamburger{
+    position: absolute;
+    top: 2.1rem;
+    right: 9%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.3rem;
+  }
+
+  .hamburger .bar{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #1E1E1E;
+  }
+
   .header {
     position: fixed;
     z-index: 10;
@@ -311,10 +329,6 @@
     color: black;
   }
 
-  .highlight-nav {
-    color: #F92A82;
-  }
-
   .highlight-desc{
     color: #F6BE9A;
   }
@@ -338,7 +352,7 @@
     /* width: 63.625rem; */
     height: 5rem;
     /* background-color: white; */
-    /* margin:auto; */
+    margin:auto;
     margin-left: 17%;
     margin-top: 9.5%;
     margin-right: 17%;
@@ -348,7 +362,7 @@
     align-items:center;
     justify-content: space-between;
     gap: 15rem;
-    min-width: 768px;
+    /* min-width: 768px; */
     /* gap: 1.25rem; */
   }
 
@@ -483,8 +497,6 @@
     margin-top: 6.3%;
     /* top: 4.9375rem; */
     margin-left: 9%;
-    /* margin-right: 28%; */
-    /* width: 12.8125rem; */
     height: 7.875rem;
     position: absolute;
   }
@@ -526,7 +538,7 @@
     height: 5.4375rem;
     display: flex;
     justify-content: space-between;
-    min-width: 768px;
+    /* min-width: 768px; */
   }
 
   .num{
@@ -598,10 +610,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 0.9375rem 0 0 1.875rem; */
+    margin: 0.9375rem 0 0 1.875rem;
     margin: auto 9%;
     margin-top: 20px;
-    min-width: 850px;
   }
 
   .schedule-title{
@@ -682,12 +693,17 @@
     font-weight: 600;
   }
 
-  .textn a{
+  .text{
     color: black;
+    transition: 0.15s ease;
   }
 
-  .textn a:hover{
+  .text:hover{
     color: #F92A82;
+  }
+
+  .text span{
+    color:#F92A82;
   }
 
   .visitor img{
@@ -708,9 +724,184 @@
   }
 
   @media only screen and (max-width: 768px) {
-    *{
-      width: 80%;
+
+    .hamburger{
+      display: flex;
     }
-    /* CSS rules for screen width less than or equal to 768px */
-    /* Add similar rules as mobile, adjust as needed */
+
+    .textn{
+      display: none;
+      width: 30%;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      margin-left: 70%;
+      margin-top: -3%;
+      padding-bottom: 3%;
+    }
+
+    .text{
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: #FFFFFF;
+    }
+
+    .nav-container{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 7% 0 7%;
+    }
+
+    .nav-container img{
+      margin-top: 10%;
+    }
+    
+    .astroboy{
+      width: 30%;
+    }
+
+    .kc-goldenage{
+      width: 30%;
+    }
+
+    .jrt-worship{
+      width: 30%;
+    }
+
+    .book-now{
+      margin:auto;
+      margin-top: 12%;
+    }
+
+    .copyright{
+      font-size: 0.65rem;
+      margin-top: 10%;
+    }
+
+    .desc-bg{
+      top: 29.5rem;
+    }
+
+    .desc-title{
+      font-size: 1.8rem;
+      margin-right: 3%;
+      margin-top: 7%;
+    }
+
+    .desc-subtitle{
+      margin-top: 17%;
+    }
+
+    .desc-text{
+      margin-right: 9%;
+    }
+
+    .footer-bg{
+      top: 137.3rem;
+    }
+
+    .footer-desc{
+      font-size: 0.8rem;
+    }
+
+    .footer-link{
+      font-size: 0.8rem;
+    }
+
+    .footer-title{
+      font-size: 0.99rem;
+    }
+
+    .hero-container{
+      margin-top: -45%;
+      margin-left: 5%;
+    }
+
+    .limited-seat-container{
+      width: 100%;
+    }
+
+    .limited-seat{
+      margin-top: 5%;
+      font-size: 1.2rem;
+    }
+
+    .logo-white img{
+      width: 9rem;
+      height: 3rem;
+    }
+
+    .logo-white p{
+      font-size: 0.78rem;
+      width: 10rem;
+    }
+
+    .motto{
+      font-size: 2.18rem;
+      margin-top: 1.6%;
+    }
+
+    .stats-bg, .stats-bg-darken, .stats-image{
+      height: 100%;
+      margin-top: -6.17%;
+    }
+    .schedule-bg {
+      top: 93.68rem;
+  }
+
+    .schedule-container{
+      margin:0;
+      margin-right: 8%;
+      margin-left: 8%;
+      display: flex;
+      align-items: center;
+    }
+
+    .schedule-desc{
+      font-size: 1.3rem;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-top: 150%;
+    }
+
+    .schedule-title{
+      font-size: 3.5rem;
+    }
+
+    .schedule-subtitle{
+      font-size: 2.15rem;
+    }
+
+    .event, .visitor, .sponsor{
+      width: 5rem;
+      height: 5rem;
+      padding-left: 0.3rem;
+      padding-top: 0;
+      padding-bottom: 0.5rem;
+      margin: 0.3125rem;
+      background: rgba(246, 190, 154, 0.95);
+      border-radius: 0.625rem;
+    }
+
+    .textn{
+      gap:2rem;
+      font-size: 0.9rem;
+    }
+
+    .plan-button{
+      top: 73%;
+    }
+
+    .icon-container{
+      /* margin: auto; */
+      margin-left: 43%;
+      margin-top: 8%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10%;
+      height: 15rem;
+      gap: 0;
+    }
   }

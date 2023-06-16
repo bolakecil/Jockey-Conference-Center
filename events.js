@@ -29,3 +29,11 @@ document.getElementById("week3").onclick = function(){
 document.getElementById("week4").onclick = function(){
     location.href = "events4.html";
 }
+
+function showText(){
+    document.getElementById("changeDisplay").style.display="flex";
+}
+
+function hideText(){
+    document.getElementById("changeDisplay").style.display="none";
+}
